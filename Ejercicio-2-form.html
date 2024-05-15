@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta HTTP-EQUIV="Expires" CONTENT="no-cache">
+		<meta charset="UTF-8">
+		<meta name="description" content="Formulario">
+		<title>Formulario de registro - Mi web</title>
+		<style>
+			label:not(.inline), input:not(.inline), textarea{
+				display: block;
+			}
+		</style>
+		<link rel="stylesheet" href="style.css">
+		<script src="jubilado.js" defer></script>
+	</head>
+	<body>
+		<h3 id="jubilado"></h3>
+		<form method="GET" action="#" name="miForm" id="miForm">
+				<h2>Formulario de registro</h2>			
+				<label for="lnombre">
+					<strong>Nombre:</strong>
+					<input id="lnombre" type="text" name="nombre" maxlength="50" size="50">
+				</label>
+				
+				<label for="lapellido1"><strong>Primer apellido:</strong><input id="lapellido1" type="text" name="apellido1" maxlength="50" size="50"></label>
+				
+				<label for="lapellido2"><strong>Segundo apellido</strong><input id="lapellido2" type="text" name="apellido2" maxlength="50" size="50"></label>
+				
+				<label for="edad"><strong>Edad:</strong><input id="edad" type="text" name="edad" maxlength="50" size="50"></label>
+				<span class="hiden error" id="errorrange"> </span>
+				<label for="ltelefono"><strong>Teléfono:</strong></label><input id="ltelefono" name="telefono" type="text" size="50">
+				
+				<label><strong>Género:</strong><span id="errorGenero" class="error hiden"> Selecciona Genero</span></label>
+				
+				<label for="idhombre" class="inline">Hombre</label>
+				<input type="radio" id="idhombre" name="sexo" class="inline">
+				
+				<label for="idmujer" class="inline">Mujer</label>
+				<input type="radio" id="idmujer" name="sexo" class="inline">
+
+				<label for="lsel"><strong>Población: </strong></label><select id="lsel" name="poblacion">
+				<option value="">---------</option>
+				<option value="Alicante" >Alicante</option>
+				<option value="Madrid" >Madrid</option>
+				<option value="Sevilla" >Sevilla</option>
+				<option value="Valencia" >Valencia</option>
+				</select>
+				
+				<label><strong>Comentarios:</strong></label><textarea name="comentarios" rows="10" cols="50">Tus comentarios aquí...
+			</textarea>
+				
+				<input id="lpublicidad" type="checkbox" name="publicidad" class="inline"><label for="lpublicidad" class="inline">Deseo recibir información sobre
+novedades y ofertas.</label>
+<br>
+			 	<input id="laceptar" type="checkbox" name="aceptar" class="inline"><label for="laceptar" class="inline"><span class=" error" id="errorraceptar"> * </span>Declaro haber leido y aceptar las
+condiciones generales del programa y la normativa sobre protección de
+datos. </label>
+
+				<input type="submit" name ="envio" value="Enviar">
+
+			
+
+
+	</body>
+</html>

@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+}
+
+.error {
+  color: red;
+}
+.hiden {
+  display: none;
+}
+.red{
+    color: white;
+    background: red;
+}
